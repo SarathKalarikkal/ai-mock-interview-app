@@ -59,7 +59,7 @@ export const mappings = {
   backbone: "backbone",
   nestjs: "nestjs",
   graphql: "graphql",
-  "graph ql": "graphql",
+  graphQL: "graphql",
   apollo: "apollo",
   webpack: "webpack",
   babel: "babel",
@@ -68,6 +68,7 @@ export const mappings = {
   rollup: "rollup",
   "parcel.js": "parcel",
   parceljs: "parcel",
+  parcel: "parcel",
   npm: "npm",
   yarn: "yarn",
   git: "git",
@@ -75,6 +76,8 @@ export const mappings = {
   gitlab: "gitlab",
   bitbucket: "bitbucket",
   figma: "figma",
+  adobexd: "xd",
+  xd: "xd",
   prisma: "prisma",
   redux: "redux",
   flux: "flux",
@@ -94,8 +97,9 @@ export const mappings = {
   contentful: "contentful",
   netlify: "netlify",
   vercel: "vercel",
-  "aws amplify": "amplify",
+  "aws amplify": "aws-amplify",
 };
+
 
 export const interviewer: CreateAssistantDTO = {
   name: "Interviewer",
@@ -202,4 +206,52 @@ export const interviewCovers = [
   "/telegram.png",
   "/tiktok.png",
   "/yahoo.png",
+];
+
+
+export const dummyInterviews: Interview[] = [
+  {
+    id: "1",
+    userId: "user1",
+    role: "Frontend Developer",
+    type: "Technical",
+    techstack: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
+    level: "Junior",
+    questions: ["What is React?", "Explain useState hook"],
+    finalized: false,
+    createdAt: "2024-03-15T10:00:00Z",
+  },
+  {
+    id: "2",
+    userId: "user2",
+    role: "Backend Developer",
+    type: "Technical",
+    techstack: ["Node.js", "Express", "MongoDB", "TypeScript"],
+    level: "Mid",
+    questions: ["How does middleware work in Express?", "Explain event loop in Node.js"],
+    finalized: true,
+    createdAt: "2024-04-10T12:30:00Z",
+  },
+  {
+    id: "3",
+    userId: "user3",
+    role: "Full Stack Developer",
+    type: "Behavioral",
+    techstack: ["React", "Node.js", "PostgreSQL", "GraphQL"],
+    level: "Senior",
+    questions: ["Tell me about a challenging project you've worked on", "How do you handle conflicts in a team?"],
+    finalized: false,
+    createdAt: "2024-05-05T15:45:00Z",
+  },
+  {
+    id: "4",
+    userId: "user4",
+    role: "UI/UX Designer",
+    type: "Design",
+    techstack: ["Figma", "XD", "CSS", "JavaScript"],
+    level: "Mid",
+    questions: ["What is the importance of user research?", "How do you approach designing for accessibility?"],
+    finalized: true,
+    createdAt: "2024-06-20T09:15:00Z",
+  },
 ];
