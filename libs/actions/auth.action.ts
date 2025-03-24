@@ -1,6 +1,7 @@
 'use server'
 
 import { db,auth } from "@/firebase/admin"
+import { doc } from "firebase/firestore"
 
 import { cookies } from "next/headers"
 
@@ -123,3 +124,4 @@ export async function isAuthenticated(){
 
     return !!user
 }
+
